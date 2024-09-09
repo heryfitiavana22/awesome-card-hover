@@ -13,7 +13,7 @@ function App() {
         <div className="flex flex-col gap-16 px-4 mx-auto sm:px-6 lg:px-8 max-w-3xl sm:gap-y-20">
           <div className="flex flex-col items-center text-center">
             <H2>
-              <span>Amazing card hover</span>
+              <span>Awesome card hover</span>
             </H2>
           </div>
           <div className="flex flex-col items-center text-center gap-10">
