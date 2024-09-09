@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #2AF0FE;
+}
+
+.cover::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  border-radius: 13px;
+  background: radial-gradient(250px circle at var(--x) var(--y), var(--primary) 0, transparent 100%);
+}

@@ -1,0 +1,32 @@
+.border-animation {
+  content: "";
+  display: none;
+  background: var(--border-bg);
+  box-shadow: 0 0 40px 20px --var(--border-bg);
+  width: calc(100% * 1.41421356237);
+  padding-bottom: calc(100% * 1.41421356237);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  z-index: -1;
+  animation: borderAnimation 2s linear infinite;
+
+  --border-bg: conic-gradient(
+    from 180deg at 50% 50%,
+    var(--primary) 0deg,
+    rgba(42, 138, 246, 0) 112.5deg,
+    rgba(42, 138, 246, 0) 228.75deg,
+    rgba(42, 138, 246, 0) 360deg
+  );
+}
+
+@keyframes borderAnimation {
+  0% {
+    transform: translate(-50%, -50%) rotate(1turn);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+}
