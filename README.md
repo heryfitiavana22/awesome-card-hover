@@ -4,7 +4,7 @@ Awesome design border on card hover
 
 ### Example
 
-```typescript
+```tsx
 function App() {
   return (
     <>
@@ -34,7 +34,7 @@ export default App;
 
 - **dynamic-border.tsx**
 
-```typescript
+```tsx
 import React, { useRef, useState, useEffect, PropsWithChildren } from "react";
 
 export function DynamicBorder({ children }: DynamicBorderProps) {
@@ -79,7 +79,7 @@ type DynamicBorderProps = PropsWithChildren<{}>;
 
 - **rotating-border.tsx**
 
-```typescript
+```tsx
 import { PropsWithChildren } from "react";
 
 export function RotatingBorder({ children }: RotatingBorderProps) {
@@ -152,7 +152,7 @@ type RotatingBorderProps = PropsWithChildren<{}>;
 
 - **card.tsx**
 
-```typescript
+```tsx
 export function Card({ description, title }: CardProps) {
   return (
     <a
